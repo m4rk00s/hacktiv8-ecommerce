@@ -1,29 +1,64 @@
-<form>
-Firstname: 
-<input type="text" name="Firstname"><br>
-Lastname:
-<input type="text" name="Lastname"><br>
-Email Address:
-<input type="text" email="EmailAddress"><br>
-Password:
-<input type="text" name="psw"><br>
-<input type="radio" name="gender" value="male" checked> Male<br>
-<input type="radio" name="gender" value="female"> Female<br>
-<input type="radio" name="gender" value="other"> Other
-<input type="checkbox" name="rules" value="aturan penggunaan dan kebijakan privasi"> saya telah membaca aturan penggunaan dan kebijakan privasi<br>
-<input type="button" onclick="alert('Hello World')" value="Daftar">
-</form>
-
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {background-color: powderblue;}
-h1 {color: blue;}
-p {color: red;}
-<link rel="stylesheet" href="styles.css">
-</style>
-</head>
-</html> 
- 
 
+<head>
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Our Selection</li>
+                <li>About us</li>
+                <li>Join Now!</li>
+                <li>Sign In</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <h1>Bag Store</h1>
+        <p>the official distributor of bags<p>
+    </div>
+    <form>
+        <label class="label-position" for="Firstname">Firstname:</label>
+        <input class="input-position" type="text" name="Firstname">
+
+        <label class="label-position" for="Lastname">Lastname:</label>
+        <input class="input-position"type="text" name="Lastname">
+        
+        <label class="label-position" for="EmailAddress">Email Address:</label>
+        <input class="input-position"type="text" email="EmailAddress" name="EmailAddress">
+        
+        <label class="label-position" for="">Password:</label>
+        <input class="input-position" type="text" name="psw">
+        
+        <label class="label-position" for="gender">Tolong jenis kelamin anda apa ya?</label>
+        <div class="input-position">
+            <input type="radio" name="gender" value="male" checked> Male <br>
+            <input type="radio" name="gender" value="female"> Female <br>
+            <input type="radio" name="gender" value="other"> Other <br>
+        </div>
+
+        <div class="submit">
+            <input class="submit" type="checkbox" name="rules" value="aturan penggunaan dan kebijakan privasi" required> 
+
+            <label class="submit" for="daftar">saya telah membaca aturan penggunaan dan kebijakan privasi</label>
+        </div>
+        
+        
+        <input class="submit" type="button" onclick="alert('Hello World')" value="Daftar" name="daftar">
+    </form>
+
+    <footer>
+        <ul>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <p>&copy; 2019 OMRA. All right reserved.</p>
+    </footer>
+</body>
+
+</html>

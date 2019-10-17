@@ -1,0 +1,30 @@
+form {
+    width: 700px;
+    margin: 0 auto;
+    /* padding-top: 60px; */
+    padding: 10px;
+    /* border: 1px solid black; */
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.label-position {
+    margin: 0 0 auto auto;
+    text-align: right;
+    /* border: 1px solid black; */
+}
+
+.input-position {
+    place-self: center;
+    justify-self: start;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* border: 1px solid red; */
+}
+
+.submit {
+    grid-column-end: 3;
+    grid-column-start: 1;
+    justify-self: center;
+}
