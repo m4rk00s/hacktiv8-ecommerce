@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:900&display=swap');
+body{
+  background-image: url("material pic/canvas.jpg");
+  margin:auto;
+}
 nav{
-  background-color: #fff8dc;
+  background-image: url("material pic/brick.jpg");
   position: fixed;
   width: 100%;
 }
@@ -11,27 +17,35 @@ nav ul li{
   padding-right: 5px;
 }
 
-main{
-  width:700px;
-  margin: 0 auto;
+.banner h1{
   text-align: center;
 }
 
-.banner, h1{
-    text-align: center;
-    background-color: white;
+.banner .h1{
+  width: 200px;
+  margin: auto;
+  background-image: url("material pic/brick.jpg");
+  font-family: 'Shadows into light', cursive;
+  font-size: 15px;
+  border-radius: 25%;
 }
 
-.banner, p{
-    text-align: center;
-    background-color: white;
+.banner .slogan{
+  width: 350px;
+  margin: auto;
+  background-image: url("material pic/brick.jpg");
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 25px;
+  border-radius: 10px;
+
 }
 
 .banner{
-    background-image: url("material pic/banner.jpg");
-    background-size: cover;
-    height: 150px;
-    padding-top: 50px;
+  background-image: url("material pic/banner.jpg");
+  height: 150px;
+  padding-top: 50px;
+  background-size: cover;
+  text-align: center;
 }
 
 .cataloggrid{
@@ -57,7 +71,7 @@ main{
 .white:hover{
     background-image: url("selection pic/preview.jpg");
     z-index: 0;
-    background-size: 250px
+    background-size: 250px;
 }
 
 .teal{
@@ -144,6 +158,11 @@ main{
     background-size: 250px
 }
 
+.our{
+  margin: auto;
+  text-align: center;
+  font-family: 'Shadows into light', cursive;
+}
 
 
 .box {
@@ -155,7 +174,7 @@ main{
 
 footer {
     padding: 10px;
-    background-color: yellow;
+    background-image: url("material pic/canvas.jpg");
     margin-top: 550px;
 }
 

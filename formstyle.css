@@ -1,19 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:900&display=swap');
+body{
+  background-image: url("material pic/canvas.jpg");
+  margin:auto;
+}
+
+nav{
+  background-image: url("material pic/brick.jpg");
+  position: fixed;
+  width: 100%
+}
+nav ul{
+  text-align: right;
+
+}
+nav ul li{
+  display: inline-block;
+  padding-right: 5px;
+}
+
+main{
+  margin: 0 auto;
+  width: 700px;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+main, h2{
+  text-align: center;
+}
+
+
+.banner h1{
+  text-align: center;
+}
+
+.banner .h1{
+  width: 200px;
+  margin: auto;
+  background-image: url("material pic/brick.jpg");
+  font-family: 'Shadows into light', cursive;
+  font-size: 15px;
+  border-radius: 25%;
+}
+
+.banner{
+  text-align: center;
+
+}
+
+.banner .slogan{
+  width: 350px;
+  margin: auto;
+  background-image: url("material pic/brick.jpg");
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 25px;
+  border-radius: 10px;
+
+}
+
+.banner{
+  background-image: url("material pic/banner.jpg");
+  height: 150px;
+  padding-top: 50px;
+  background-size: cover;
+}
+
 form {
-    width: 700px;
-    margin: 0 auto;
+    margin: auto;
     /* padding-top: 60px; */
     padding: 10px;
     /* border: 1px solid black; */
     grid-gap: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify: center;
 }
 
-.label-position {
-    margin: 0 0 auto auto;
-    text-align: right;
-    /* border: 1px solid black; */
+.input{
+  margin:auto;
+  box-shadow: 1;
 }
+
 
 .input-position {
     place-self: center;
@@ -26,5 +93,57 @@ form {
 .submit {
     grid-column-end: 3;
     grid-column-start: 1;
-    justify-self: center;
+    justify-self: left;
+    margin-top: 15px;
+}
+
+.box {
+    width: 100%;
+    height: 500px;
+    /* border: 15px solid green; */
+    background-color: black;
+}
+
+footer {
+    padding: 10px;
+    margin:auto;
+    background-image: url("material pic/canvas.jpg");
+    width: 100%;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0 15px 10px 0;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    list-style: none;
+    width: 70px;
+    /* padding-right: 10px; */
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+footer p {
+    margin: 0;
+    /* grid-area: 2 3 / 2 3; */
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 10px;
+    /* padding: 0; */
+    /* border: 1px solid red; */
+}
+
+.boxform{
+  padding:10px;
+  background-color: white;
+  opacity: 0.5
+}
+
+.formtext{
+  font-weight: bold;
 }

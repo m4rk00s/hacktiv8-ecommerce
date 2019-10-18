@@ -2,54 +2,67 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="formstyle.css">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="formstyle.css" type="text/css" rel="stylesheet">
+    <title>Sign up now!</title>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>Our Selection</li>
-                <li>About us</li>
-                <li>Join Now!</li>
-                <li>Sign In</li>
-            </ul>
-        </nav>
-    </header>
-    <div class="banner">
-        <h1>Bag Store</h1>
-        <p>the official distributor of bags<p>
-    </div>
-    <form>
-        <label class="label-position" for="Firstname">Firstname:</label>
-        <input class="input-position" type="text" name="Firstname">
+  <header>
+    <nav>
+      <ul>
+        <li><a class="omra" href="index.html">OMRA</a></li>
+        <li><a href="selection.html">Our Selection</a></li>
+        <li><a href="about us.html">About us<a></li>
+        <li><a href="form.html">Join Now!<a></li>
+        <li><a href="">Sign in<a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="banner">
+    <div class="h1">
+    <h1>OMRA Store</h1>
+  </div>
+  <div class="slogan">
+    <h5>the official distributor of Jansport Bags<h5>
+  </div>
+  </div>
 
+ <div class="boxform">
+   <div class="formtext">
+    <form action="join.html" method="POST">
+
+        <label class="label-position" for="Firstname">Firstname:</label>
+        <div =class"input"><input class="input-position" type="text" name="Firstname" required pattern:[a-zA-Z]></div>
+        <br>
         <label class="label-position" for="Lastname">Lastname:</label>
-        <input class="input-position"type="text" name="Lastname">
-        
+        <div =class"input"><input class="input-position"type="text" name="Lastname" required pattern:[a-zA-Z]></div>
+        <br>
         <label class="label-position" for="EmailAddress">Email Address:</label>
-        <input class="input-position"type="text" email="EmailAddress" name="EmailAddress">
-        
+        <div class="input"><input class="input-position"type="text" email="EmailAddress" name="EmailAddress"></div>
+        <br>
         <label class="label-position" for="">Password:</label>
-        <input class="input-position" type="text" name="psw">
-        
-        <label class="label-position" for="gender">Tolong jenis kelamin anda apa ya?</label>
+        <div class="input"><input class="input-position" type="text" name="psw"></div>
+        <br>
+        <label class="label-position" for="gender">Gender:</label>
         <div class="input-position">
             <input type="radio" name="gender" value="male" checked> Male <br>
             <input type="radio" name="gender" value="female"> Female <br>
             <input type="radio" name="gender" value="other"> Other <br>
         </div>
-
+        <br>
         <div class="submit">
-            <input class="submit" type="checkbox" name="rules" value="aturan penggunaan dan kebijakan privasi" required> 
+            <input class="submit" type="checkbox" name="rules" value="aturan penggunaan dan kebijakan privasi" required>
 
-            <label class="submit" for="daftar">saya telah membaca aturan penggunaan dan kebijakan privasi</label>
+            <label class="submit" for="daftar">I have read and agree to the <a href="">terms and agreement<a></label>
         </div>
-        
-        
-        <input class="submit" type="button" onclick="alert('Hello World')" value="Daftar" name="daftar">
+
+
+        <input type="submit" value="Submit">
     </form>
+  </div>
+  </div>
 
     <footer>
         <ul>
